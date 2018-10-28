@@ -41,7 +41,7 @@ class ConsultantAvatar extends React.Component<WithStyles<typeof styles>> {
     return(
       <div className={this.props.classes.container}>
         <div className={this.props.classes.consultant}>
-          <Avatar className={this.props.classes.avatar}>A</Avatar>
+          <Avatar className={this.props.classes.avatar} alt='Consultant Profile Image'>A</Avatar>
           <div className={this.props.classes.info}>
             <Typography variant='title'>April Bakonyi, NP</Typography>
             <Typography variant='caption' className={this.props.classes.caption}>Nurse Practitioner</Typography>

@@ -4,30 +4,10 @@ import * as React from 'react';
 
 const styles = (theme: Theme) =>
   createStyles({
-    avatar: {
-      backgroundColor: '#77bc7e',
-      color: '#fff',
-      height: 60,
-      marginLeft: 5,
-      marginRight: 15,
-      width: 60,
-    },
-    bio: {
-      color: '#68b3d8',
-      textDecoration: 'none',
-    },
-    button: {
-      background: '#68b3d8',
-      color: '#fff',
-    },
     container: {
       alignItems: 'center',
       display: 'flex',
       flexDirection: 'column',
-    },
-    info: {
-      marginBottom: 15,
-      marginRight: 10,
     },
 })
 export interface IProps extends WithStyles<typeof styles> {
