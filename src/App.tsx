@@ -1,22 +1,24 @@
+import { Grid } from '@material-ui/core';
 import * as React from 'react';
-import './App.css';
+import Page from './components/page';
+import PageContainer from './components/pageContainer';
 
-import logo from './logo.svg';
+
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+      <div>
+        <Grid container={true}>
+          <Grid item={true} xs={12}>
+            <PageContainer>
+              <Page/>
+            </PageContainer>
+          </Grid>
+        </Grid>
       </div>
     );
   }
-}
+} 
 
 export default App;
