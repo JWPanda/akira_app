@@ -1,9 +1,11 @@
 {
+  "homepage": "https://jwpanda.github.io/akira_app/",
   "name": "akira_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@types/jest": "^23.3.7",
+    "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts-ts": "3.1.0"
@@ -12,16 +14,20 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "@material-ui/core": "^3.3.1",
     "@types/axios": "^0.14.0",
+    "@types/gh-pages": "^2.0.0",
     "@types/jest": "^23.3.7",
     "@types/moment": "^2.13.0",
     "@types/node": "^10.12.0",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
+    "gh-pages": "^2.0.1",
     "moment": "^2.22.2",
     "redux": "^4.0.1",
     "ts-loader": "^5.2.2",
