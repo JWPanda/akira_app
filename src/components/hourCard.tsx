@@ -1,4 +1,4 @@
-import { createStyles, Grid, Paper, Theme, Typography, withStyles, WithStyles } from '@material-ui/core'; 
+import { createStyles, Grid, Paper, Theme, Typography, withStyles, WithStyles } from '@material-ui/core';
 import axios from 'axios';
 import * as moment from 'moment';
 import * as React from 'react';
@@ -43,7 +43,7 @@ class HourCard extends React.Component <IProps, IState> {
       systemTime: props.currentTime,
     }
   }
-  
+
   public componentDidMount() {
     axios.get("https://app.akira.md/api/system_status")
       .then((response) => {
@@ -81,26 +81,26 @@ class HourCard extends React.Component <IProps, IState> {
     const closeTime = moment(close).format('h:mm a');
     const nextOpen = moment(open);
     return (
-      <Grid 
-        container={true} 
-        justify='center' 
+      <Grid
+        container={true}
+        justify='center'
         >
-        <Grid 
-          item={true} 
-          xs={12} 
-          md={8} 
-          xl={4} 
+        <Grid
+          item={true}
+          xs={12}
+          md={8}
+          xl={4}
           className={this.props.classes.item}
           >
           {
             this.state.openNow  &&
             (
-              <Typography 
-                align='center' 
-                variant='subheading' 
+              <Typography
+                align='center'
+                variant='subheading'
                 >
-                <b>On Call Now</b>
-                { this.state.openTwentyFour ? 
+                <b>On Site Now</b>
+                { this.state.openTwentyFour ?
                   (<span className={this.props.classes.hours}> Open 24h</span>):
                   (<span className={this.props.classes.hours}> {openTime} - {closeTime}</span>)
                 }
@@ -108,8 +108,8 @@ class HourCard extends React.Component <IProps, IState> {
             )
           }
           <Paper className={this.props.classes.paper}>
-            {this.state.openNow ? 
-              (<ConsultantAvatar/>) : (<Closed nextOpen={nextOpen}/>) 
+            {this.state.openNow ?
+              (<ConsultantAvatar/>) : (<Closed nextOpen={nextOpen}/>)
             }
          </Paper>
         </Grid>
