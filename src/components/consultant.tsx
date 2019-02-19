@@ -43,8 +43,8 @@ class ConsultantAvatar extends React.Component<WithStyles<typeof styles>> {
         <div className={this.props.classes.consultant}>
           <Avatar className={this.props.classes.avatar} alt='Consultant Profile Image'>A</Avatar>
           <div className={this.props.classes.info}>
-            <Typography variant='title'>April Bakoaskdlfjsadkl;fjkl;sadjfklasjl;fksjadnyi, NP</Typography>
-            <Typography variant='caption' className={this.props.classes.caption}>Nurse Practitioner</Typography>
+            <Typography variant='title'>April Bakoaskdlfjsadkl;fjkl;saasdfsadfasdfasdfsadfasdfsdafsafdjfklasjl;fksjadnyi, NP</Typography>
+            <Typography variant='caption' className={this.props.classes.caption}>Nurse Pasfasfsafasfsfractitioner</Typography>
             <a href="#" className={this.props.classes.bio}>SEE PROFILE</a>
           </div>
         </div>
