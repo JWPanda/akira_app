@@ -48,7 +48,7 @@ class ConsultantAvatar extends React.Component<WithStyles<typeof styles>> {
             <a href="#" className={this.props.classes.bio}>SEE PROFILE</a>
           </div>
         </div>
-        <Button className={this.props.classes.button} variant='contained' fullWidth={true}>Start a consult</Button>
+        <Button className={this.props.classes.button} variant='contained' fullWidth={true}>Start a asdfasdfasdfasfdconsult</Button>
       </div>
     )
   }
